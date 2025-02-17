@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.5.0.schema.json
+
+PackageIdentifier: Microsoft.VisualStudioCode.Insiders
+PackageVersion: 1.98.0
+Commands:
+  - code-insiders
+InstallerType: inno
+Installers:
+  - Architecture: arm64
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/e20adc378e7bda18152984725c31d22cb4eaac17/VSCodeSetup-arm64-1.98.0-insider.exe'
+    InstallerSha256: 33235d23dd1bc863551410c945c8875d537d8b796a6b7ef257fb05aa0e9bdbe3
+    Scope: machine
+  - Architecture: arm64
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/e20adc378e7bda18152984725c31d22cb4eaac17/VSCodeUserSetup-arm64-1.98.0-insider.exe'
+    InstallerSha256: 8ce5e7d7b6c393e7c4b795131c909e058f4306fab78fe857e04a553bf7affee6
+    Scope: user
+  - Architecture: x64
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/e20adc378e7bda18152984725c31d22cb4eaac17/VSCodeSetup-x64-1.98.0-insider.exe'
+    InstallerSha256: 387f226abd3a462c8fe4a7704730f7c784ec5c2d2e5b86721d649a0fc8cab0c3
+    Scope: machine
+  - Architecture: x64
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/e20adc378e7bda18152984725c31d22cb4eaac17/VSCodeUserSetup-x64-1.98.0-insider.exe'
+    InstallerSha256: c3292d9c4edab98be913e1262b701723b510e4a26cdf9eaba4c3219079a12407
+    Scope: user
+ManifestType: installer
+ManifestVersion: 1.5.0
+InstallerSwitches:
+  Custom: /mergetasks=!runcode
