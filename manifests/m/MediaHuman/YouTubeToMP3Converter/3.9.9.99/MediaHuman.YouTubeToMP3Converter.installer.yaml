@@ -1,0 +1,19 @@
+# Automatically updated by the winget bot at 2025/Apr/05
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: MediaHuman.YouTubeToMP3Converter
+PackageVersion: 3.9.9.99
+InstallerType: inno
+Scope: machine
+UpgradeBehavior: install
+ProductCode: MediaHuman YouTube to MP3 Converter_is1
+ReleaseDate: 2025-03-29
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.mediahuman.com/files/YouTubeToMP3.exe
+  InstallerSha256: 1FDC66891E7A944AE790285CAE0FBE89C306400019CD037D1E15D82C9EB0BC84
+- Architecture: x64
+  InstallerUrl: https://www.mediahuman.com/files/YouTubeToMP3-x64.exe
+  InstallerSha256: 9B3BE9A2BB5DBE25CA3C916013E0A59020457AC5DE153B166FA71AFDB93AE957
+ManifestType: installer
+ManifestVersion: 1.10.0
